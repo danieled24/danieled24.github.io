@@ -1,0 +1,176 @@
+/*colores 
+#dbd374 amarillo
+#8e5bb5 morado 
+#bf5695 rosa
+*/
+
+
+
+.container {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* como se representa el VH /height: 100vh - es el alto total de la pantalla /width: 100vw - es el ancho total de la pantalla */
+}
+
+.content {
+    max-width: 960px;
+    /*ANCHO MAXIMO*/
+    width: 100%;
+    /*QUE ABARQUE TODO LO QUE DISPONE DE ANCHO*/
+    height: 80vh;
+    /*QUE ABARQUE TODO LO DISPONIBLE DE ALTO*/
+    background-color: white;
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16), 0 3px 6px rgb(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative;
+    overflow: scroll;
+}
+
+.content {
+    padding: 1em;
+}
+
+td {
+    display: block;
+    width: 100%;
+}
+
+td:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+th {
+    display: none;
+}
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #dbd374;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    font-family: 'Fascinate', cursive;
+}
+
+a {
+    text-decoration: line-through;
+    color: red;
+
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph {
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.tittle-item {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #dbd374;
+    padding-bottom: 1em;
+    font-size: 2em;
+
+}
+
+.position {
+    background-color: #8e5bb5;
+    color: aqua;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+
+}
+
+.address {
+    font-weight: bold;
+    color: yellowgreen;
+    font-size: 0.9em;
+    margin-top: 1em;
+    display: inline-block;
+
+}
+
+.main-image {
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+@media (min-width:900px) {
+    th {
+        display: table-cell;
+    }
+
+    td {
+        width: auto;
+        display: table-cell;
+    }
+
+    td:nth-of-type(1) {
+        font-size: 1em;
+    }
+
+    Mobile first .content {
+        padding: 1.8em;
+    }
+}
+
+@media(min-height:550px) {
+    .content {
+        height: 500px;
+    }
+}
